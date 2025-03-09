@@ -21,9 +21,6 @@ namespace SimpleTCPProtocol
 
             while (IsRunning)
             {
-                writer.WriteLine("Choose method ('Random', 'Add' or 'Subtract')");
-                writer.Flush();
-
                 string? message = reader.ReadLine();
                 if (message == null)
                 {

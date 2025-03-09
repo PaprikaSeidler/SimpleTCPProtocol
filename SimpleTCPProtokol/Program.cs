@@ -8,9 +8,9 @@ namespace SimpleTCPProtocol
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("TCP Server protokol");
+            Console.WriteLine("TCP Server protocol");
 
-            int port = 7;
+            int port = 12000;
             TcpListener listener = new TcpListener(IPAddress.Any, port);
             listener.Start();
             while (true)
